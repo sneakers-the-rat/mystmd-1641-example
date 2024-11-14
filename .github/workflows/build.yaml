@@ -31,11 +31,11 @@ jobs:
           mkdir _site/in_order
           cp index.html _site/
       - run: |
-          myst build --html
+          BASE_URL="https://jon-e.net/mystmd-1641-example/out_of_order" myst build --html
           cp -r ./_build/html/* ../_site/out_of_order
         working-directory: out_of_order
       - run: |
-          myst build --html
+          BASE_URL="https://jon-e.net/mystmd-1641-example/in_order" myst build --html
           cp -r ./_build/html/* ../_site/in_order
         working-directory: in_order
       - name: Upload artifact
