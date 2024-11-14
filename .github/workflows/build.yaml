@@ -24,7 +24,7 @@ jobs:
           mkdir _site
           mkdir _site/out_of_order
           mkdir _site/in_order
-          cp index.html site/
+          cp index.html _site/
       - run: |
           myst build --html
           cp -r ./_build/html/* ../_site/out_of_order
