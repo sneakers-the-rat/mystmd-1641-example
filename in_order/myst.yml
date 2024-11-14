@@ -1,0 +1,12 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 3447377e-b204-4078-8398-fcc69565b0bf
+  toc:
+    - file: a.md
+    - file: b.md
+    - file: c.md
+    - file: z.md
+    - file: f.md
+site:
+  template: book-theme
