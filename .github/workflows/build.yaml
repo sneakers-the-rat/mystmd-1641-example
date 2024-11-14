@@ -19,7 +19,7 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - run: python -m pip install mystmd==${{ mystmd-version }}
+      - run: python -m pip install mystmd==${{ matrix.mystmd-version }}
       - run: |
           mkdir _site
           mkdir _site/out_of_order
